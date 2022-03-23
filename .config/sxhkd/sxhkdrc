@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	alacritty
 
 # program launcher
-super + @space
-	dmenu_run
+super + d
+	rofi -combi-modi window,drun,ssh -theme solarized -font "hack 10" -show combi -show-icons
 
 # make sxhkd reload its configuration files:
 super + Escape
