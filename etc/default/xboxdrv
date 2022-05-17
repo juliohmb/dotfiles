@@ -1,0 +1,33 @@
+[xboxdrv]
+evdev = /dev/input/by-id/usb-SHANWAN_Trust_Gamepad-event-joystick
+silent = true
+next-controller = true
+[xboxdrv-daemon]
+dbus = disabled
+
+[axismap]
+-Y1 = Y1
+-Y2 = Y2
+
+[evdev-absmap]
+ABS_X  = X1
+ABS_Y  = Y1
+ABS_Z  = X2
+ABS_RZ = Y2
+ABS_HAT0X = DPAD_X
+ABS_HAT0Y = DPAD_Y
+
+[evdev-keymap]
+BTN_C = A
+BTN_EAST = B
+BTN_NORTH = X
+BTN_SOUTH = Y
+BTN_WEST = LB
+BTN_Z = RB
+BTN_TL = LT
+BTN_TR = RT
+BTN_SELECT = TL
+BTN_START = TR
+BTN_TL2 = BACK
+BTN_TR2 = START
+BTN_MODE = GUIDE

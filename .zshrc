@@ -36,6 +36,7 @@ alias wsl='wsl.exe'
 alias explorer='explorer.exe'
 alias functions='echo "searchtagactivefunds notifyme mailme mailmyipv6 s3upload"'
 alias l='exa -la --icons'
+alias cdut='cd ~/utfpr'
 notifyme(){
   curl -s -o /dev/null  "https://maker.ifttt.com/trigger/notifyme/with/key/dllPS2ycSCnelY2cMhI7b0?value1=$1"
 }
