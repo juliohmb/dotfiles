@@ -1,0 +1,5 @@
+spotify
+vscodium-bin
+whatsapp-nativefier
+lunar-client
+google-chrome

@@ -1,0 +1,11 @@
+neovim
+rust
+base-devel
+flameshot
+wine
+discord
+alacritty
+stow
+copyq
+firefox
+exa
