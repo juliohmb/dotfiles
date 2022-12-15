@@ -1,0 +1,12 @@
+---
+- name: Start all docker servers
+  hosts: localhost
+  connection: local 
+  become: yes
+  
+  tasks:
+    - name: Run `docker-compose up` again
+    community.docker.docker_compose:
+      project_src: flask
+      build: no
+    register: output

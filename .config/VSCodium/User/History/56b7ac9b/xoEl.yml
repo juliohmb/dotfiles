@@ -1,0 +1,27 @@
+---
+version: "3"
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - EULA=TRUE
+      - TYPE=PAPER
+      - OPS=juliohmb
+      - TZ=America/Sao_Paulo
+      - VERSION=1.18.2
+      - ENABLE_RCON=true
+      - ENABLE_PORT=25575
+      - RCON_PASSWORD=testing
+      - ONLINE_MODE=FALSE
+      - DIFFICULTY=hard
+    volumes:
+      - ./data:/data
+      - ./plugins:/plugins
+    ports:
+      - 25565:25565
+    tty: true
+    stdin_open: true
+    restart: unless-stopped

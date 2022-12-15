@@ -1,0 +1,18 @@
+---
+- name: Install and configure cronie
+  hosts: localhost
+  connection: local 
+  become: yes
+  
+  tasks:
+    - name: Install/Update Cronie
+      pacman:
+        name: cronie
+        state: latest
+        update_cache: yes
+    
+    - name: Enable service cronie
+      ansible.builtin.systemd:
+        name: cronie
+        enabled: yes
+        state: started

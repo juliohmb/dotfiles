@@ -1,0 +1,20 @@
+- name: Install packages
+  hosts: all
+  tasks:
+  - name: Download the package using Yay
+    package:
+      name: my-package
+      state: download
+      manager: yay
+    when: ansible_os_family == 'Archlinux'
+
+  - name: Download the package using Winget
+    win_winget:
+      name: my-package
+      state: download
+    when: ansible_os_family == 'Windows'
+
+  - name: Print an error message
+    debug:
+      msg: "Unable to download the package on this operating system"
+    else: true

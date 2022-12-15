@@ -1,0 +1,20 @@
+# Set default values for all following accounts.
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
+
+# Gmail
+account juliohmb@gmail.com
+from juliohmb@gmail.com
+user juliohmb@gmail.com
+password 050755Alura
+host smtp.gmail.com
+port 587
+tls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+
+# Set a default account
+account default : juliohmb@gmail.com

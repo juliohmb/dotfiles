@@ -1,0 +1,11 @@
+---
+- name: All hosts up-to-date
+  hosts: localhost
+  connection: local 
+  become: yes
+  
+  tasks:
+    - name: full system upgrade
+      pacman:
+        update_cache: yes
+        upgrade: yes

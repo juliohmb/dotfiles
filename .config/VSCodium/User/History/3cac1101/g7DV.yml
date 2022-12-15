@@ -1,0 +1,59 @@
+
+---
+- name: Install packages
+  hosts: localhost
+  connection: local 
+  become: yes
+  tasks:
+  # requirements for both
+  - name: Install google-chrome using Yay
+    package:
+      name: google-chrome
+      state: present
+      manager: yay
+    when: ansible_os_family == 'Archlinux'
+
+  - name: Install google-chrome using Winget
+    win_winget:
+      name: google-chrome
+      state: present
+    when: ansible_os_family == 'Windows'
+
+  - name: Install google-chrome using default
+    package:
+      name: google-chrome
+      state: present
+    else: true
+  # requirements for linux
+  - name: Install flameshot using Yay
+    package:
+      name: flameshot
+      state: present
+      manager: yay
+    when: ansible_os_family == 'Archlinux'
+
+  - name: Install flameshot using default
+    package:
+      name: flameshot
+      state: present
+    else: true
+
+  - name: Install google-chrome using Yay
+    package:
+      name: google-chrome
+      state: present
+      manager: yay
+    when: ansible_os_family == 'Archlinux'
+
+  - name: Install google-chrome using default
+    package:
+      name: google-chrome
+      state: present
+    else: true
+  # requirements for windows
+  - name: Install Google.Chrome using Winget
+    win_winget:
+      name: Google.Chrome
+      state: present
+    when: ansible_os_family == 'Windows'
+

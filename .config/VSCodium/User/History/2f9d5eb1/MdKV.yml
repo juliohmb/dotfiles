@@ -1,0 +1,18 @@
+---
+- name: Install and configure msmtp
+  hosts: localhost
+  connection: local 
+  become: yes
+  
+  tasks:
+    - name: Install/Update Msmtp
+      pacman:
+        name: msmtp
+        state: latest
+        update_cache: yes
+    
+    - name: Install/Update msmtp-mta
+      pacman:
+        name: msmtp-mta
+        state: latest
+        update_cache: yes

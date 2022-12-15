@@ -1,0 +1,11 @@
+flameshot
+google-chrome
+neovim
+base-devel
+discord
+copyq
+firefox
+rust
+exa
+bluez
+bluez-utils

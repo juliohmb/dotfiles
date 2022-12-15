@@ -1,0 +1,5 @@
+Discord.Discord
+Google.Chrome
+Nvidia.GeForceExperience
+Valve.Steam
+EpicGames.EpicGamesLauncher

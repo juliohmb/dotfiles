@@ -1,0 +1,23 @@
+---
+- name: Enshure docker is installed
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: Upgrade docker
+    pacman:
+      name: docker
+      state: latest
+      update_cache: yes
+
+    - name: Upgrade docker-compose
+    pacman:
+      name: docker-compose
+      state: latest
+      update_cache: yes
+    
+    - name: Enable service docker
+    ansible.builtin.systemd:
+      name: httpd
+      enabled: yes
+      state: started

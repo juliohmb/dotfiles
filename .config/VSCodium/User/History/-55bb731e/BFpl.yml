@@ -1,0 +1,50 @@
+---
+- name: Start all docker servers
+  hosts: localhost
+  connection: local 
+  become: yes
+  
+  tasks:
+    - name: Upgrade pip3
+      pacman:
+        name: python-pip
+        state: latest
+        update_cache: yes
+
+    - name: Ensure docker python package is installed
+      ansible.builtin.pip:
+        name: docker
+    
+    - name: Ensure docker-compose python package is installed
+      ansible.builtin.pip:
+        name: docker-compose
+
+    - name: Run Heimdall
+      community.docker.docker_compose:
+        project_src: heimdall
+        build: no
+      register: output
+    
+    - name: Run Portainer
+      community.docker.docker_compose:
+        project_src: portainer
+        build: no
+      register: output
+    
+    - name: Run Jellyfin
+      community.docker.docker_compose:
+        project_src: jellyfin
+        build: no
+      register: output
+    
+    - name: Run Transmission
+      community.docker.docker_compose:
+        project_src: transmission
+        build: no
+      register: output
+    
+    - name: Run Stremio
+      community.docker.docker_compose:
+        project_src: stremio
+        build: no
+      register: output

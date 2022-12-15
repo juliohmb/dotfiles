@@ -1,0 +1,12 @@
+---
+- name: Start all docker servers
+  hosts: localhost
+  connection: local 
+  become: yes
+  
+  tasks:
+    - name: Run Heimdall
+      community.docker.docker_compose:
+        project_src: heimdall
+        build: no
+      register: output

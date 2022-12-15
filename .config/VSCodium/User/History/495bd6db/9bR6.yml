@@ -1,0 +1,15 @@
+---
+- name: Get repos
+  hosts: localhost
+  connection: local
+  tasks:
+    # get AI repo
+    - name: Clone the repository
+      git:
+        repo: git@github.com:juliohmb/AI.git
+        dest: ~/AI
+    # get Tools repo
+    - name: Clone the repository
+      git:
+        repo: git@github.com:juliohmb/Tools.git
+        dest: ~/Tools

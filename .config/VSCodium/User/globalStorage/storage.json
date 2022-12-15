@@ -32,14 +32,13 @@
                         "label": "Open Wor&&kspace from File..."
                     },
                     {
-                        "id": "submenuitem.35",
+                        "id": "submenuitem.37",
                         "label": "Open &&Recent",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -48,17 +47,7 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/juliohmb/essentials/_Arch",
-                                        "path": "/home/juliohmb/essentials/_Arch",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/essentials/_Arch"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
+                                        "fsPath": "/home/juliohmb/essentials",
                                         "external": "file:///home/juliohmb/essentials",
                                         "path": "/home/juliohmb/essentials",
                                         "scheme": "file"
@@ -70,12 +59,100 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/juliohmb/essentials/_Manjaro",
-                                        "path": "/home/juliohmb/essentials/_Manjaro",
+                                        "external": "file:///home/juliohmb/dotfiles",
+                                        "path": "/home/juliohmb/dotfiles",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/essentials/_Manjaro"
+                                    "label": "~/dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/Tools/YoutubeDownloader",
+                                        "path": "/home/juliohmb/Tools/YoutubeDownloader",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Tools/YoutubeDownloader"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/homeserver",
+                                        "path": "/home/juliohmb/homeserver",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/homeserver"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/AI/Essentials",
+                                        "path": "/home/juliohmb/AI/Essentials",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/AI/Essentials"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/AI/tradingBot",
+                                        "path": "/home/juliohmb/AI/tradingBot",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/AI/tradingBot"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/AI/ScreenShoter",
+                                        "path": "/home/juliohmb/AI/ScreenShoter",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/AI/ScreenShoter"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/IA/WhatsAppMessager",
+                                        "path": "/home/juliohmb/IA/WhatsAppMessager",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/IA/WhatsAppMessager"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/IA/Comprovantes_Pdf",
+                                        "path": "/home/juliohmb/IA/Comprovantes_Pdf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/IA/Comprovantes_Pdf"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/IA/ChatGpt",
+                                        "path": "/home/juliohmb/IA/ChatGpt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/IA/ChatGpt"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -84,45 +161,111 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/juliohmb/.config/alacritty/alacritty.yml",
-                                        "path": "/home/juliohmb/.config/alacritty/alacritty.yml",
+                                        "external": "file:///home/juliohmb/homeserver/start.yml",
+                                        "path": "/home/juliohmb/homeserver/start.yml",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/alacritty/alacritty.yml"
+                                    "label": "~/homeserver/start.yml"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/juliohmb/dotfiles/.config/VSCodium/User/settings.json",
-                                        "path": "/home/juliohmb/dotfiles/.config/VSCodium/User/settings.json",
+                                        "external": "file:///home/juliohmb/AI/stable-diffusion-webui/webui.sh",
+                                        "path": "/home/juliohmb/AI/stable-diffusion-webui/webui.sh",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dotfiles/.config/VSCodium/User/settings.json"
+                                    "label": "~/AI/stable-diffusion-webui/webui.sh"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/juliohmb/.config/VSCodium/User/settings.json",
-                                        "path": "/home/juliohmb/.config/VSCodium/User/settings.json",
+                                        "external": "file:///home/juliohmb/AI/stable-diffusion-webui/launch.py",
+                                        "path": "/home/juliohmb/AI/stable-diffusion-webui/launch.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/VSCodium/User/settings.json"
+                                    "label": "~/AI/stable-diffusion-webui/launch.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/juliohmb/.config/Code/User/settings.json",
-                                        "path": "/home/juliohmb/.config/Code/User/settings.json",
+                                        "external": "file:///home/juliohmb/IA/stable-diffusion-webui/webui.sh",
+                                        "path": "/home/juliohmb/IA/stable-diffusion-webui/webui.sh",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/Code/User/settings.json"
+                                    "label": "~/IA/stable-diffusion-webui/webui.sh"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///usr/lib/python3.10/site-packages/pkg_resources/__init__.py",
+                                        "path": "/usr/lib/python3.10/site-packages/pkg_resources/__init__.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/usr/lib/python3.10/site-packages/pkg_resources/__init__.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///etc/hosts",
+                                        "path": "/etc/hosts",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/etc/hosts"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///etc/default/grub",
+                                        "path": "/etc/default/grub",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/etc/default/grub"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/GRUB_DISABLE_OS_PROBER.",
+                                        "path": "/home/juliohmb/GRUB_DISABLE_OS_PROBER.",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/GRUB_DISABLE_OS_PROBER."
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/juliohmb/.msmtprc",
+                                        "path": "/home/juliohmb/.msmtprc",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.msmtprc"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///etc/locale.gen",
+                                        "path": "/etc/locale.gen",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/etc/locale.gen"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -176,11 +319,26 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
+                        "id": "submenuitem.39",
+                        "label": "Share",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
                         "id": "workbench.action.toggleAutoSave",
                         "label": "A&&uto Save"
                     },
                     {
-                        "id": "submenuitem.34",
+                        "id": "submenuitem.36",
                         "label": "&&Preferences",
                         "submenu": {
                             "items": [
@@ -216,7 +374,7 @@
                                 },
                                 {
                                     "id": "workbench.action.openSnippets",
-                                    "label": "User &&Snippets"
+                                    "label": "Configure User Snippets"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -246,6 +404,10 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -415,7 +577,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "submenuitem.23",
+                        "id": "submenuitem.25",
                         "label": "&&Appearance",
                         "submenu": {
                             "items": [
@@ -460,7 +622,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel"
+                                    "label": "Show &&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -470,7 +633,7 @@
                                     "label": "&&Move Primary Side Bar Left"
                                 },
                                 {
-                                    "id": "submenuitem.33",
+                                    "id": "submenuitem.35",
                                     "label": "Panel Position",
                                     "submenu": {
                                         "items": [
@@ -491,7 +654,7 @@
                                     }
                                 },
                                 {
-                                    "id": "submenuitem.32",
+                                    "id": "submenuitem.34",
                                     "label": "Align Panel",
                                     "submenu": {
                                         "items": [
@@ -534,7 +697,7 @@
                         }
                     },
                     {
-                        "id": "submenuitem.30",
+                        "id": "submenuitem.32",
                         "label": "Editor &&Layout",
                         "submenu": {
                             "items": [
@@ -553,6 +716,13 @@
                                 {
                                     "id": "workbench.action.splitEditorRight",
                                     "label": "Split &&Right"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "Split in &&Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -646,8 +816,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "enabled": false
+                        "label": "&&Word Wrap"
                     },
                     {
                         "id": "editor.action.toggleMinimap",
@@ -690,7 +859,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "submenuitem.37",
+                        "id": "submenuitem.40",
                         "label": "Switch &&Editor",
                         "submenu": {
                             "items": [
@@ -739,7 +908,7 @@
                         }
                     },
                     {
-                        "id": "submenuitem.38",
+                        "id": "submenuitem.41",
                         "label": "Switch &&Group",
                         "submenu": {
                             "items": [
@@ -941,7 +1110,7 @@
                         "label": "Toggle &&Breakpoint"
                     },
                     {
-                        "id": "submenuitem.31",
+                        "id": "submenuitem.33",
                         "label": "&&New Breakpoint",
                         "submenu": {
                             "items": [
@@ -996,8 +1165,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1189,6 +1357,11 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1326,6 +1499,11 @@
                 "label": "Ctrl+NumPad0",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+numpad0"
+            },
+            "workbench.action.splitEditorInGroup": {
+                "label": "Ctrl+K Ctrl+Shift+\\",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
             },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Shift+Alt+0",
@@ -1569,22 +1747,46 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 300,
+            "sideBarWidth": 305,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/juliohmb/.config/VSCodium/Backups/1654093197516",
+            "folder": "file:///home/juliohmb/essentials",
+            "backupPath": "/home/juliohmb/.config/VSCodium/Backups/2bd263dffd39b6044d91cbc1adffb93b",
             "uiState": {
                 "mode": 0,
-                "x": 965,
-                "y": 49,
-                "width": 945,
-                "height": 987
+                "x": 448,
+                "y": 185,
+                "width": 1024,
+                "height": 768
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///home/juliohmb/essentials",
+                "backupPath": "/home/juliohmb/.config/VSCodium/Backups/2bd263dffd39b6044d91cbc1adffb93b",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 185,
+                    "width": 1024,
+                    "height": 768
+                }
+            },
+            {
+                "folder": "file:///home/juliohmb/Tools/YoutubeDownloader",
+                "backupPath": "/home/juliohmb/.config/VSCodium/Backups/cdd5e96d87bd67bb97c69b538f8c21ec",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 185,
+                    "width": 1024,
+                    "height": 768
+                }
+            }
+        ]
     }
 }

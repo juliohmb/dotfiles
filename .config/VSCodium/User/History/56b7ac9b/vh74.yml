@@ -1,0 +1,40 @@
+---
+version: "3"
+services:
+  rcon:
+    image: itzg/rcon
+    environment:
+      RWA_USERNAME: admin
+      RWA_PASSWORD: admin
+      RWA_ADMIN: "TRUE"
+      # is referring to the hostname of 'mc' compose service below
+      RWA_RCON_HOST: minecraft
+      # needs to match the password configured for the container, which is 'minecraft' by default
+      RWA_RCON_PASSWORD: minecraft
+    ports:
+      - 4326:4326
+      - 4327:4327
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft
+    environment:
+      - VERSION=1.18.2
+      - PUID=1000
+      - PGID=1000
+      - EULA=TRUE
+      - TYPE=PAPER
+      - OPS=juliohmb
+      - TZ=America/Sao_Paulo
+      - ENABLE_RCON=true
+      - ENABLE_PORT=25575
+      - ONLINE_MODE=FALSE
+      - DIFFICULTY=hard
+      - RCON_PASSWORD=minecraft
+    volumes:
+      - ./data:/data
+      - ./plugins:/plugins
+    ports:
+      - 25565:25565
+    tty: true
+    stdin_open: true
+    restart: unless-stopped

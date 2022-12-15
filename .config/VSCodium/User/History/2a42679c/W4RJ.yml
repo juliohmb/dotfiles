@@ -1,0 +1,10 @@
+---
+- name: get repos
+  hosts: all
+  tasks:
+  # get AI repo
+   - name: Clone the repository
+    git:
+      repo: git@github.com:juliohmb/essentials.git
+      dest: /home/{{ ansible_user }}/repo
+  

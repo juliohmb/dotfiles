@@ -1,0 +1,11 @@
+---
+version: "3"
+services:
+  stremio:
+    image: sleeyax/stremio-streaming-server
+    container_name: stremio
+    volumes:
+      - ./data:/root/.stremio-server
+    ports:
+      - 11470:11470
+    restart: unless-stopped

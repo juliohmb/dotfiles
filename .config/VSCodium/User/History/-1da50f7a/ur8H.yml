@@ -1,0 +1,34 @@
+---
+- name: Ensure docker is installed
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: Upgrade docker
+      pacman:
+        name: docker
+        state: latest
+        update_cache: yes
+
+    - name: Upgrade docker-compose
+      pacman:
+        name: docker-compose
+        state: latest
+        update_cache: yes
+    
+    - name: Enable service docker
+      ansible.builtin.systemd:
+        name: httpd
+        enabled: yes
+        state: started
+
+    - name: Ensure group "docker" exists
+      ansible.builtin.group:
+        name: docker
+        state: present
+    
+    - name: adding existing user 'juliohmb' to group sudo
+      user:
+        name: juliohmb
+        groups: docker
+        append: yes
