@@ -38,7 +38,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -844,7 +845,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -853,7 +855,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1777,12 +1780,11 @@
                 }
             },
             {
-                "folder": "file:///home/juliohmb/Tools/YoutubeDownloader",
-                "backupPath": "/home/juliohmb/.config/VSCodium/Backups/cdd5e96d87bd67bb97c69b538f8c21ec",
+                "backupPath": "/home/juliohmb/.config/VSCodium/Backups/1671149397058",
                 "uiState": {
-                    "mode": 0,
-                    "x": 448,
-                    "y": 185,
+                    "mode": 1,
+                    "x": 478,
+                    "y": 215,
                     "width": 1024,
                     "height": 768
                 }
