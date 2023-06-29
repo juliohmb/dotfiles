@@ -36,7 +36,8 @@ alias wsl='wsl.exe'
 alias explorer='explorer.exe'
 alias functions='echo "searchtagactivefunds notifyme mailme mailmyipv6 s3upload"'
 alias l='exa -la --icons'
-alias cdut='cd ~/utfpr'
+alias cdut='cd /mnt/c/Users/julio/OneDrive/Documents/UTFPR'
+alias unroll="PIPENV_PIPFILE=~/Tools/Unrolled/Pipfile pipenv run python ~/Tools/Unrolled/main.py"
 notifyme(){
   curl -s -o /dev/null  "https://maker.ifttt.com/trigger/notifyme/with/key/dllPS2ycSCnelY2cMhI7b0?value1=$1"
 }
@@ -52,3 +53,19 @@ source ~/.fiiszshrc.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# export display for x server on wsl
+# if grep -qi microsoft /proc/version; then
+#   export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+#   export LIBGL_ALWAYS_INDIRECT=1
+# fi
+
+# Start Docker daemon automatically when logging in if not running.
+DOCKERISRUNNING=`ps aux | grep dockerd | grep -v grep`
+if [ -z "$DOCKERISRUNNING" ]; then
+    sudo dockerd > /dev/null 2>&1 &
+    disown
+fi
+
+export PATH=/home/$USER/Tools/FakeStreamDeck/gcc-arm-none-eabi-10-2020-q4-major/bin:$PATH
+export PICO_SDK_PATH=/home/juliohmb/Tools/rp2040_sdk/pico-sdk
